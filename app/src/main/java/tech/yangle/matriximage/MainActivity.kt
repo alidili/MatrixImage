@@ -2,6 +2,8 @@ package tech.yangle.matriximage
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
+import tech.yangle.matriximage.databinding.ActivityMainBinding
 
 /**
  * 首页
@@ -11,8 +13,15 @@ import android.os.Bundle
  */
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.mivSample.setOnImageLongClickListener { view, pointF ->
+            Toast.makeText(this, "长按事件 x:${pointF.x} y:${pointF.y}", Toast.LENGTH_LONG).show()
+        }
     }
 }

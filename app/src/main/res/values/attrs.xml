@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MatrixImageView">
+        <!-- 连接线宽度 -->
+        <attr name="fcLineWidth" format="dimension" />
+        <!-- 连接线宽度，小数部分 -->
+        <attr name="fcLineWidthOffset" format="dimension" />
+        <!-- 缩放控制点半径 -->
+        <attr name="fcScaleDotRadius" format="dimension" />
+        <!-- 缩放控制点半径，小数部分 -->
+        <attr name="fcScaleDotRadiusOffset" format="dimension" />
+        <!-- 旋转控制点半径 -->
+        <attr name="fcRotateDotRadius" format="dimension" />
+        <!-- 旋转控制点半径，小数部分 -->
+        <attr name="fcRotateDotRadiusOffset" format="dimension" />
+        <!-- 图片控制框颜色 -->
+        <attr name="fcFrameColor" format="color" />
+    </declare-styleable>
+
+</resources>
