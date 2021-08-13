@@ -4,11 +4,11 @@
 
 # 温度控制旋转按钮
 
-[![](https://img.shields.io/badge/APK%20download-4.45M-green.svg)]()
+[![](https://img.shields.io/badge/APK%20download-4.45M-green.svg)](https://github.com/alidili/MatrixImage/raw/main/MatrixImageView.apk)
 
 ## 效果图
 
-![MatrixImage]()
+![MatrixImage](https://github.com/alidili/MatrixImage/blob/main/image/MatrixImageView.gif)
 
 ## License
 
