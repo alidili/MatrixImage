@@ -1,7 +1,5 @@
 # MatrixImage
 
-## 效果图
-
 [![](https://img.shields.io/badge/APK%20download-4.45M-green.svg)](https://github.com/alidili/MatrixImage/raw/main/MatrixImageView.apk)
 
 ## 效果图
