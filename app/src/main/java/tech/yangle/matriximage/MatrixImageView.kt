@@ -121,20 +121,11 @@ class MatrixImageView : AppCompatImageView {
                 R.styleable.MatrixImageView_fcLineWidth -> { // 连接线宽度
                     mLineWidth = typedArray.getDimension(attr, mLineWidth)
                 }
-                R.styleable.MatrixImageView_fcLineWidthOffset -> { // 连接线宽度，小数部分
-                    mLineWidth += typedArray.getDimension(attr, 0f)
-                }
                 R.styleable.MatrixImageView_fcScaleDotRadius -> { // 缩放控制点半径
                     mScaleDotRadius = typedArray.getDimension(attr, mScaleDotRadius)
                 }
-                R.styleable.MatrixImageView_fcScaleDotRadiusOffset -> { // 缩放控制点半径，小数部分
-                    mScaleDotRadius += typedArray.getDimension(attr, 0f)
-                }
                 R.styleable.MatrixImageView_fcRotateDotRadius -> { // 旋转控制点半径
                     mRotateDotRadius = typedArray.getDimension(attr, mRotateDotRadius)
-                }
-                R.styleable.MatrixImageView_fcRotateDotRadiusOffset -> { // 旋转控制点半径，小数部分
-                    mRotateDotRadius += typedArray.getDimension(attr, 0f)
                 }
                 R.styleable.MatrixImageView_fcFrameColor -> { // 图片控制框颜色
                     mFrameColor = typedArray.getColor(attr, mFrameColor)
