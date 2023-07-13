@@ -4,6 +4,8 @@
 
 ## 效果图
 
+[《Android自定义控件 支持移动、缩放、旋转功能的ImageView》](https://www.jianshu.com/p/c954e2aea2f3)
+
 ![MatrixImage](https://github.com/alidili/MatrixImage/blob/main/image/MatrixImageView.gif)
 
 ## License
