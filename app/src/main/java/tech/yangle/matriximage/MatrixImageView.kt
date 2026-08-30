@@ -479,7 +479,15 @@ class MatrixImageView : AppCompatImageView {
             return
         }
         // 缩放
-        mImgMatrix.postScale(scaleFactorX, scaleFactorY, scaleBaseX, scaleBaseY)
+        // 修复旋转后缩放变形：将视图坐标系的缩放基准点转换到图片局部坐标系，在局部坐标系中应用缩放
+        val inverseMatrix = Matrix().setInvert(mImgMatrix)
+        val localPivot = floatArrayOf(scaleBaseX, scaleBaseY)
+        inverseMatrix.mapPoints(localPivot)
+        val localPx = localPivot[0]
+        val localPy = localPivot[1]
+        mImgMatrix.preTranslate(localPx, localPy)
+        mImgMatrix.preScale(scaleFactorX, scaleFactorY)
+        mImgMatrix.preTranslate(-localPx, -localPy)
         imageMatrix = mImgMatrix
     }
 
